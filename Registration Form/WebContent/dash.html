@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+        <script type="text/javascript">
+            function vall()
+            {
+              var vall=document.getElementById("projectlist").value;
+                var strUser = vall.options[e.selectedIndex].text;
+                alert("You are working in "+strUser+"project");
+                 //alert("You are working in project");
+            }
+        </script>
+            
+</head>
+<body>
+    <form onsubmit="vall()">
+    <select id="projectlist">
+        <option  value="rail">Railways</option>
+            <option  value="rail">Railways</option>
+            <option  value="product">Product</option>
+            <option  value="Some other product">Some other product</option>
+    </select>
+
+            <input type="submit" value="Submit">        
+</form>
+
+</body>
+</html>

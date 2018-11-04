@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>summa</title>
+        <script type="text/javascript">
+        function validate()
+        {
+            var pass= document.getElementById("pass1");
+            var pass1= document.getElementById("pass2");
+            if(!(pass.equals(pass1)))
+            {
+                alert("Password mismatch");
+                return false;
+            }
+            else
+                return true;
+        }
+</script>
+
+<style type="text/css">
+*{
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  font-size: 120%;
+  background: #F8F8FF;
+  background-image:url("img3.jpg");
+  font-family: sans-serif;
+}
+
+.header {
+  width: 30%;
+  margin: 50px auto 0px;
+  color: #9c95b9;
+  background: #141a34;
+  text-align: center;
+  border: 1px solid #B0C4DE;
+  border-bottom: none;
+  border-radius: 10px 10px 0px 0px;
+  padding: 20px;
+}
+form, .content {
+  width: 30%;
+  margin: 0px auto;
+  padding: 20px;
+  border: 1px solid #B0C4DE;
+  background: #2d46b6;
+  border-radius: 0px 0px 10px 10px;
+}
+.input-group {
+  margin: 10px 0px 10px 0px;
+}
+.input-group label {
+  display: block;
+  text-align: left;
+  margin: 3px;
+  color: white;
+  font-style: italic;
+}
+.input-group input {
+  height: 30px;
+  width: 93%;
+  padding: 5px 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+.btn {
+  padding: 10px;
+  font-size: 15px;
+  color: white;
+  background: #5F9EA0;
+  border: none;
+  border-radius: 5px;
+}
+.error {
+  width: 92%;
+  margin: 0px auto;
+  padding: 10px;
+  border: 1px solid #a94442;
+  color: #a94442;
+  background: #f2dede;
+  border-radius: 5px;
+  text-align: left;
+}
+.success {
+  color: #9c95b9;
+  background: #2d46b6;
+  border: 1px solid white;
+  margin-bottom: 20px;
+}
+</style>
+</head>
+
+<body>
+<div class="header">
+  	<h2>Register</h2>
+  </div>
+    
+    <form method="post" onsubmit="validate()" action="Servlet22">
+  	
+  	<div class="input-group">
+  		<label>Username</label>
+  		<input type="text" name="uname" >
+  	</div>
+  	<div class="input-group">
+  		<label>Password</label>
+  		<input type="password" id="pass1" name="upass">
+  	</div>
+        <div class="input-group">
+  		<label>Confirm Password</label>
+  		<input type="password" id="pass2" name="upass1">
+  	</div>
+       
+       <div class="input-group">
+  		<label>Employee id</label>
+  		<input type="text" name="eid">
+  	</div>
+       <div class="input-group">
+  		<label>Gender</label>
+  		<input type="text" name="egen">
+  	</div>
+       <div class="input-group">
+  		<label>Phone number</label>
+  		<input type="text" name="ephn">
+  	</div>
+  	<div class="input-group">
+  		<input type="submit" class="btn" name="login_user" value="Register">
+  	</div>
+  	
+  </form> 
+</body>
+
+</html>
+
